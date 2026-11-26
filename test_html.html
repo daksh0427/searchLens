@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <pre class="mermaid">
+flowchart TD
+    A[Input Layer] -->|Input Data|  B[Hidden Layer]
+    B -->|Activation Function|  C[Output Layer]
+    A -->|Weight Matrix W|  B
+    Z[Dot Product between x and W] -->|Result|  C
+    </pre>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: false });
+        await mermaid.run();
+    </script>
+</body>
+</html>
